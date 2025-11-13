@@ -4,20 +4,20 @@
 <link rel="stylesheet" href="index.css">
 </head>
 
-<body style="background-image: url(Фон.jpg);">
-<a href="index.htm">Обратно</a>
+<body style="background-image: url(Р¤РѕРЅ.jpg);">
+<a href="index.htm">РћР±СЂР°С‚РЅРѕ</a>
 <br>
 <script language="JavaScript">
-alert("Привет!")
+alert("РџСЂРёРІРµС‚!")
 x=4
 y=6
 alert(x+y)
 document.write(parseInt("12.66", 2) + "<br>")
 document.write(parseFloat("22.4") + "<br>")
 document.write(isNaN("3") + "<br>")
-document.write(isNaN("Крутой сайт") + "<br>")
+document.write(isNaN("РљСЂСѓС‚РѕР№ СЃР°Р№С‚") + "<br>")
 function F1() {
-alert("Кнопка нажата")
+alert("РљРЅРѕРїРєР° РЅР°Р¶Р°С‚Р°")
 }
 function F2() {
 a1="123"
@@ -30,43 +30,43 @@ if (age > 17) {
 window.location.href = "index.htm";
 }
 else {
-alert("Вам нет 18-ти лет")
+alert("Р’Р°Рј РЅРµС‚ 18-С‚Рё Р»РµС‚")
 }
-item="сэндвич";
+item="СЃСЌРЅРґРІРёС‡";
 switch (item) {
-     case "сэндвич":
+     case "СЃСЌРЅРґРІРёС‡":
      alert("100$")
      break
-     case "торт":
+     case "С‚РѕСЂС‚":
      alert("50$")
      break
 }
     i = 0;
     while (i < 20) {
-        document.write("Строка (While) номер " + (i + 1) + "<br>");
+        document.write("РЎС‚СЂРѕРєР° (While) РЅРѕРјРµСЂ " + (i + 1) + "<br>");
         i++;
     }
 
     j = 0;
     do {
-        document.write("Строка (Do-While) номер " + (j + 1) + "<br>");
+        document.write("РЎС‚СЂРѕРєР° (Do-While) РЅРѕРјРµСЂ " + (j + 1) + "<br>");
         j++;
     } while (j < 20);
 
     for (let k = 0; k < 20; k++) {
-        document.write("Строка (For) номер " + (k + 1) + "<br>");
+        document.write("РЎС‚СЂРѕРєР° (For) РЅРѕРјРµСЂ " + (k + 1) + "<br>");
     }
 
-    let text = "Это строка для демонстрации методов String.";
-    document.write("<p>Оригинал: " + text + "</p>");
+    let text = "Р­С‚Рѕ СЃС‚СЂРѕРєР° РґР»СЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РјРµС‚РѕРґРѕРІ String.";
+    document.write("<p>РћСЂРёРіРёРЅР°Р»: " + text + "</p>");
     // String.toUpperCase()
-    document.write("<p>Верхний регистр: " + text.toUpperCase() + "</p>");
+    document.write("<p>Р’РµСЂС…РЅРёР№ СЂРµРіРёСЃС‚СЂ: " + text.toUpperCase() + "</p>");
     // String.includes()
-    document.write("<p>Содержит слово 'демонстрации'? " + text.includes("демонстрации") + "</p>");
+    document.write("<p>РЎРѕРґРµСЂР¶РёС‚ СЃР»РѕРІРѕ 'РґРµРјРѕРЅСЃС‚СЂР°С†РёРё'? " + text.includes("РґРµРјРѕРЅСЃС‚СЂР°С†РёРё") + "</p>");
 
     let today = new Date();
-    document.write("<p>Текущая дата и время: " + today.toLocaleString() + "</p>");
-    document.write("<p>Текущий месяц (0-11): " + today.getMonth() + "</p>");
+    document.write("<p>РўРµРєСѓС‰Р°СЏ РґР°С‚Р° Рё РІСЂРµРјСЏ: " + today.toLocaleString() + "</p>");
+    document.write("<p>РўРµРєСѓС‰РёР№ РјРµСЃСЏС† (0-11): " + today.getMonth() + "</p>");
 
  function handleMenuChange() {
         let menu = document.getElementById("interactiveMenu");
@@ -74,13 +74,13 @@ switch (item) {
         let resultDiv = document.getElementById("menuResult");
 
         if (selectedValue === "apple") {
-            resultDiv.innerHTML = "Вы выбрали Яблоко. Цена: 50 руб.";
+            resultDiv.innerHTML = "Р’С‹ РІС‹Р±СЂР°Р»Рё РЇР±Р»РѕРєРѕ. Р¦РµРЅР°: 50 СЂСѓР±.";
         } else if (selectedValue === "banana") {
-            resultDiv.innerHTML = "Вы выбрали Банан. Цена: 70 руб.";
+            resultDiv.innerHTML = "Р’С‹ РІС‹Р±СЂР°Р»Рё Р‘Р°РЅР°РЅ. Р¦РµРЅР°: 70 СЂСѓР±.";
         } else if (selectedValue === "orange") {
-            resultDiv.innerHTML = "Вы выбрали Апельсин. Цена: 60 руб.";
+            resultDiv.innerHTML = "Р’С‹ РІС‹Р±СЂР°Р»Рё РђРїРµР»СЊСЃРёРЅ. Р¦РµРЅР°: 60 СЂСѓР±.";
         } else {
-            resultDiv.innerHTML = "Пожалуйста, выберите фрукт.";
+            resultDiv.innerHTML = "РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІС‹Р±РµСЂРёС‚Рµ С„СЂСѓРєС‚.";
         }
     }
 
@@ -96,11 +96,11 @@ switch (item) {
 
         if (name && !isNaN(score)) {
             students.push({ name: name, score: score });
-            nameInput.value = ''; // Очищаем поля ввода
+            nameInput.value = ''; // РћС‡РёС‰Р°РµРј РїРѕР»СЏ РІРІРѕРґР°
             scoreInput.value = '';
             updateStudentStats(resultDiv);
         } else {
-            alert("Пожалуйста, введите корректное имя и балл.");
+            alert("РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅРѕРµ РёРјСЏ Рё Р±Р°Р»Р».");
         }
     }
 
@@ -114,17 +114,17 @@ switch (item) {
 
         let averageScore = totalStudents > 0 ? (totalScoreSum / totalStudents).toFixed(2) : 0;
 
-        let output = "<h3>Статистика по студентам:</h3>";
-        output += "<p>Всего добавлено студентов: " + totalStudents + "</p>";
-        output += "<p>Сумма баллов за все экзамены: " + totalScoreSum + "</p>";
-        output += "<p>Средний балл: " + averageScore + "</p>";
+        let output = "<h3>РЎС‚Р°С‚РёСЃС‚РёРєР° РїРѕ СЃС‚СѓРґРµРЅС‚Р°Рј:</h3>";
+        output += "<p>Р’СЃРµРіРѕ РґРѕР±Р°РІР»РµРЅРѕ СЃС‚СѓРґРµРЅС‚РѕРІ: " + totalStudents + "</p>";
+        output += "<p>РЎСѓРјРјР° Р±Р°Р»Р»РѕРІ Р·Р° РІСЃРµ СЌРєР·Р°РјРµРЅС‹: " + totalScoreSum + "</p>";
+        output += "<p>РЎСЂРµРґРЅРёР№ Р±Р°Р»Р»: " + averageScore + "</p>";
         
         resultDiv.innerHTML = output;
     }
 
 </script>
-<button onClicK="F1()">Нажать</button>
-<button onClicK="F2()">Сумма 2 строк</button>
-<a href="index.htm"><button>Другой файл</button></a>
+<button onClicK="F1()">РќР°Р¶Р°С‚СЊ</button>
+<button onClicK="F2()">РЎСѓРјРјР° 2 СЃС‚СЂРѕРє</button>
+<a href="index.htm"><button>Р”СЂСѓРіРѕР№ С„Р°Р№Р»</button></a>
 </body>
 </html>
