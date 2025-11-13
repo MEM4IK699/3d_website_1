@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>3D</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body style="background-image: url(Фон.jpg);">
+<a href="index.htm">Обратно</a>
+<br>
+<script language="JavaScript">
+alert("Привет!")
+x=4
+y=6
+alert(x+y)
+document.write(parseInt("12.66", 2) + "<br>")
+document.write(parseFloat("22.4") + "<br>")
+document.write(isNaN("3") + "<br>")
+document.write(isNaN("Крутой сайт") + "<br>")
+function F1() {
+alert("Кнопка нажата")
+}
+function F2() {
+a1="123"
+a2="321"
+a=a1+a2
+document.write(a)
+}
+age=12
+if (age > 17) {
+window.location.href = "index.htm";
+}
+else {
+alert("Вам нет 18-ти лет")
+}
+item="сэндвич";
+switch (item) {
+     case "сэндвич":
+     alert("100$")
+     break
+     case "торт":
+     alert("50$")
+     break
+}
+    i = 0;
+    while (i < 20) {
+        document.write("Строка (While) номер " + (i + 1) + "<br>");
+        i++;
+    }
+
+    j = 0;
+    do {
+        document.write("Строка (Do-While) номер " + (j + 1) + "<br>");
+        j++;
+    } while (j < 20);
+
+    for (let k = 0; k < 20; k++) {
+        document.write("Строка (For) номер " + (k + 1) + "<br>");
+    }
+
+    let text = "Это строка для демонстрации методов String.";
+    document.write("<p>Оригинал: " + text + "</p>");
+    // String.toUpperCase()
+    document.write("<p>Верхний регистр: " + text.toUpperCase() + "</p>");
+    // String.includes()
+    document.write("<p>Содержит слово 'демонстрации'? " + text.includes("демонстрации") + "</p>");
+
+    let today = new Date();
+    document.write("<p>Текущая дата и время: " + today.toLocaleString() + "</p>");
+    document.write("<p>Текущий месяц (0-11): " + today.getMonth() + "</p>");
+
+ function handleMenuChange() {
+        let menu = document.getElementById("interactiveMenu");
+        let selectedValue = menu.value;
+        let resultDiv = document.getElementById("menuResult");
+
+        if (selectedValue === "apple") {
+            resultDiv.innerHTML = "Вы выбрали Яблоко. Цена: 50 руб.";
+        } else if (selectedValue === "banana") {
+            resultDiv.innerHTML = "Вы выбрали Банан. Цена: 70 руб.";
+        } else if (selectedValue === "orange") {
+            resultDiv.innerHTML = "Вы выбрали Апельсин. Цена: 60 руб.";
+        } else {
+            resultDiv.innerHTML = "Пожалуйста, выберите фрукт.";
+        }
+    }
+
+    let students = [];
+
+    function addStudent() {
+        let nameInput = document.getElementById("studentName");
+        let scoreInput = document.getElementById("studentScore");
+        let resultDiv = document.getElementById("studentResults");
+
+        let name = nameInput.value;
+        let score = parseInt(scoreInput.value);
+
+        if (name && !isNaN(score)) {
+            students.push({ name: name, score: score });
+            nameInput.value = ''; // Очищаем поля ввода
+            scoreInput.value = '';
+            updateStudentStats(resultDiv);
+        } else {
+            alert("Пожалуйста, введите корректное имя и балл.");
+        }
+    }
+
+    function updateStudentStats(resultDiv) {
+        let totalStudents = students.length;
+        let totalScoreSum = 0;
+
+        for (let i = 0; i < totalStudents; i++) {
+            totalScoreSum += students[i].score;
+        }
+
+        let averageScore = totalStudents > 0 ? (totalScoreSum / totalStudents).toFixed(2) : 0;
+
+        let output = "<h3>Статистика по студентам:</h3>";
+        output += "<p>Всего добавлено студентов: " + totalStudents + "</p>";
+        output += "<p>Сумма баллов за все экзамены: " + totalScoreSum + "</p>";
+        output += "<p>Средний балл: " + averageScore + "</p>";
+        
+        resultDiv.innerHTML = output;
+    }
+
+</script>
+<button onClicK="F1()">Нажать</button>
+<button onClicK="F2()">Сумма 2 строк</button>
+<a href="index.htm"><button>Другой файл</button></a>
+</body>
+</html>
